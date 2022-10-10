@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont-nav {
+  width: 600px;
+  margin: auto;
+  height: auto;
+  border: 3px solid black;
+}
+
+#logo {
+  width: 150px;
+}
+.nav-cont-main {
+  width: 100%;
+  background-color: #3f475f;
+}
+.nav-main {
+  margin: auto;
+  width: 1115px;
+}
+.nav {
+  background-color: #3f475f !important;
+}
+.buttons {
+  border: none !important;
+  font-size: 13px;
+}
+#frm-1 {
+  width: 290px;
+  border-radius: 4px;
+  height: 36px !important;
+  background: #2f333f;
+  border: none;
+}
+#frm-1:focus {
+  height: 36px !important;
+  background: #ffffff;
+  border: none;
+}
+.icons a {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #abbdf3;
+}
+.icons a:hover {
+  color: rgb(248, 247, 242);
+}
+.icons a > i:hover {
+  transform: scale(1.2);
+}
+.numb {
+  position: absolute;
+  left: 845px;
+  bottom: 30px;
+  background-color: rgb(159, 12, 12);
+  padding: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 19px;
+  font-weight: bold;
+  color: white;
+}
+#btn-ucret {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 13px;
+  height: 34px;
+  background-color: rgb(118, 167, 246) !important;
+  border: none !important;
+  border-radius: 3px;
+}
+#btn-ucret:hover {
+  background-color: rgb(105, 105, 233) !important;
+  border: none;
+}
+
+.input-container {
+  display: flex !important;
+  width: 100%;
+}
+
+/* Style the form icons */
+#icon {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  position: absolute;
+  left: 533px;
+  top: 13px;
+  padding: 8px;
+  background: #2f333f;
+  color: rgb(160, 155, 155);
+  height: 34px;
+  min-width: 34px;
+  text-align: center;
+}
+/* Style the input fields */
+.input-field {
+  margin-left: 100px;
+  width: 250px;
+  outline: none;
+}
+
+#frm-1:focus ~ #icon {
+  color: white;
+  background-color: rgb(118, 167, 246);
+}
+
+::placeholder {
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 12px;
+}
+:focus::placeholder {
+  color: rgb(35, 34, 34);
+}
+/* Source form kısmında placeholder için focus olduğunda transparent olması için, sonradan vazgeçtim. */
+
+/* :focus::placeholder {
+  color: transparent;
+} */
+
+/* content gallery */
+.heading {
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+.container {
+  margin-top: 20px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+}
+.container p {
+  font-size: 13px;
+}
+.a-side-link {
+  margin-right: 50px;
+  margin-left: 525px;
+  text-decoration: none;
+  font-size: 13px;
+}
+hr {
+  size: 1px;
+  color: gray;
+  width: 91%;
+  margin: auto;
+  margin-left: 175px;
+}
+.head-start {
+  margin: auto;
+  max-width: 900px;
+}
+.gallery-image {
+  margin-left: 585px;
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 100px;
+  width: 100px;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 130px;
+  left: 7px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.4em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* aside left  */
+.uiBox {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  position: absolute;
+  bottom: 70px;
+  left: 320px;
+  font-size: 14px;
+}
+.uiBox ul li a {
+  color: rgb(32, 95, 150);
+  text-decoration: none;
+}
+.uiBox ul li {
+  margin-top: 5px;
+  list-style-type: none;
+}
+.uiBox span {
+  font-size: 10px;
+  opacity: 50%;
+}
+.btm-border {
+  border-top: 1px solid #cfcfd2;
+}
